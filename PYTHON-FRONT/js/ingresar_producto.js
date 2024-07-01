@@ -14,7 +14,7 @@ function guardar() {
     }
     console.log(datos);
     
-    let url = "http://localhost:5000/registro"
+    let url = "https://24169grupo5.pythonanywhere.com/registro"
     var options = {
         body: JSON.stringify(datos),
         method: 'POST',
@@ -25,7 +25,7 @@ function guardar() {
             console.log("creado")
             alert("Producto Guardado!")
             // Devuelve el href (URL) de la página actual
-            window.location.href = "../trabajoFrontendCodoACodo/tabla_productos.html";; 
+            window.location.href = "../templates/tabla_productos.html";; 
             
         })
         .catch(err => {

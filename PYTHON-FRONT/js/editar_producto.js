@@ -14,7 +14,7 @@ function modificar() {
 
     console.log(datos);
 
-    let url = "http://localhost:5000/update/"+id
+    let url = "https://24169grupo5.pythonanywhere.com/update/"+id
     var options = {
         body: JSON.stringify(datos),
         method: 'PUT',
@@ -30,7 +30,7 @@ function modificar() {
             alert("Registro modificado")
 
             //Puedes utilizar window.location.href para obtener la URL actual, redirigir a otras páginas
-           window.location.href = "../trabajoFrontendCodoACodo/tabla_productos.html";
+           window.location.href = "../templates/tabla_productos.html";
           
         })
         .catch(err => {
