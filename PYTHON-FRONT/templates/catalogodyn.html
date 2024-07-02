@@ -24,11 +24,12 @@
     </header>
 
     <main>
+    <div v-for="producto in productos">
         <div class="card">
-            <img src="/img/Hombre modelo (1).jpg" alt="Producto 1">
+            <img src="producto.imagen" alt="Producto 1" class="product-image">
             <div class="card-content">
                 <h3>Producto 1</h3>
-                <p>Descripción del Producto 1. Conjunto masculino que combina audacia y elegancia. <br> Polera verde militar y pantalón negro con tirantes. <br> Un estilo único para destacar con confianza.</p>
+                <p data-label="Descripción">{{producto.descripcion}}</p>
                 <a class="button" onclick="mostrarDetalles(event, 'detalle1')">Ver Detalles</a>
                 <div id="detalle1" class="details-message">
                     <p><strong>Precio:</strong> $49.99</p>
@@ -36,6 +37,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <div class="card">
             <img src="/img/Hombre modelo (2).jpg" alt="Producto 2">
             <div class="card-content">
@@ -100,6 +102,8 @@
         
     </main>
     <script src="/js/scripts.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="/js/tabla_producto.js"></script>
 </body>
 
 </html>
