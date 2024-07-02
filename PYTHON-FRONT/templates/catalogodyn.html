@@ -31,7 +31,7 @@
               </button>  
             </div> 
 
-    <div v-for="producto in productos">
+    <div v-for="producto in productos" :key="producto.id" :id="'producto'+producto.id">
         <div class="card">
             <img :src="producto.imagen" alt="" class="product-image">
             <div class="card-content">

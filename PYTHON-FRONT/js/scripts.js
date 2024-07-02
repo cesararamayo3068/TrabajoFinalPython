@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-function mostrarDetalles(event, detailsId) {
+function mostrarDetalles(event, detalleid) {
     event.preventDefault();
-    var details = document.getElementById(detailsId);
+    var details = document.getElementById(detalleid);
     if (details.classList.contains('active')) { 
         details.classList.remove('active');
     } else {
