@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/ingresar_producto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Editar Producto</title>
+    
+</head>
+
+<body>
+
+    <header id="header"></header>
+
+    <main>
+        <section>
+            <div class="container-form">
+                <h2>Editar Producto</h2>
+                <form >
+
+                    <div class="entrada">
+                        <label for="id">ID</label>
+                        <input type="number" name="id" id="id" disabled>
+                    </div>
+                    <div class="entrada">
+                        <label for="descripcion">Descripcion:</label>
+                        <input type="text" name="descripcion" id="descripcion">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="precio">Precio:</label>
+                        <input type="number" name="precio" id="precio">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" name="cantidad" id="cantidad">
+                    </div>
+
+                    <div class="entrada">
+                        <label for="imagen">Imagen (URL):</label>
+                        <input type="text" name="imagen" id="imagen">
+                    </div>
+
+                    <div class="entrada">
+                        <button class="modificar" type="button" onclick="modificar()">
+                            <i class="fas fa-save"></i> Modificar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+    <script src="/js/editar_producto.js"></script>
+    <script src="/js/datos_editar.js"></script>
+ 
+</body>
+
+</html>
