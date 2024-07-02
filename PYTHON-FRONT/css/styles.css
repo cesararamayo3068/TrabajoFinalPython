@@ -3,9 +3,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height:100%;
     
 }
-
+html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height:100%;
+    
+}
 header {
     display:flex;
     align-items: flex-end;
@@ -49,11 +56,30 @@ section {
 }
 
 footer {
-    background-color: #FFE4C4;
+    /*- background-color: #c47c25;
     color: #080404;
     padding: 20px;
-    text-align: center;
-}
+    text-align: center; */
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;}
+
+footer2 {
+        /*- background-color: #c47c25;
+        color: #080404;
+        padding: 20px;
+        text-align: center; */
+        position:relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #831010;
+        padding: 10px;
+        text-align: center;}
 
 /* Estilos responsivos */
 @media only screen and (max-width: 768px) {
@@ -176,7 +202,7 @@ footer {
     display: block;
     
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .card-content {
@@ -309,8 +335,20 @@ nav ul li a.selected {
     transition: background-color 0.3s ease;
 }
 
+.botonRojo {
+    padding: 10px 20px;
+    background-color: #921022; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 .boton:hover {
     background-color: #0056b3; 
+}
+}
+.botonRojo:hover {
+    background-color: #3a0303; 
 }
 .form-group {
     margin-bottom: 20px;
