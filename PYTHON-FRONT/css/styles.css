@@ -244,10 +244,10 @@ footer2 {
 
 /* Estilos para el mensaje de detalles */
 .details-message {
-    display: none;
+    display: block;
     background-color: #f9f9f9;
     border-top: 1px solid #ddd;
-    padding: 10px;
+    padding: 0px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -346,7 +346,7 @@ nav ul li a.selected {
 .boton:hover {
     background-color: #0056b3; 
 }
-}
+
 .botonRojo:hover {
     background-color: #3a0303; 
 }
@@ -406,6 +406,7 @@ tr:hover {
 .actions {
     display: flex;
     justify-content: space-around;
+    vertical-align: center;
 }
 
 .actions button {
@@ -413,10 +414,11 @@ tr:hover {
     border: none;
     cursor: pointer;
     font-size: 18px;
+  
 }
 
 .actions .edit {
-    color: #4caf50;
+    color: #2f198f;
 }
 
 .actions .delete {
