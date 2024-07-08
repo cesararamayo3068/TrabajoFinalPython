@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rocco Couture</title>
+    <title>Tienda de Vestir</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="shortcut icon" href="/img/LogoRC.ico" type="image/x-icon">
 </head>
@@ -12,7 +12,7 @@
 <body>
     <header>
         <img src="/img/logoRC.png" alt="Logo" id="logo">
-        <h1>Rocco Couture</h1>
+        <h1>Tienda de Vestir</h1>
         <nav>
             <ul>
                 <li><a href="/index.html">Inicio</a></li>
@@ -37,29 +37,14 @@
             <div class="card-content">
                 <h3 data-label="ID">Artículo N°{{producto.id}}</h3>
                 <p data-label="Descripción">{{producto.descripcion}}</p>
-                <a class="button" onclick="mostrarDetalles(event, 'detalle1' )">Ver Detalles</a>
+                <!-- <a class="button" onclick="mostrarDetalles(event, 'detalle1' )">Ver Detalles</a> -->
                 <div id="detalle1" class="details-message">
                     <p><strong>Precio: $</strong>{{producto.precio}}</p>
                     <p><strong>Talles:</strong> S, M, L, XL</p>
                 </div>
             </div>
         </div>
-    </div>
-    <!--   <div class="card">
-            <img src="/img/Hombre modelo (2).jpg" alt="Producto 2">
-            <div class="card-content">
-                <h3>Producto 2</h3>
-                <p>Descripción del Producto 2. Un look masculino clásico y elegante: polera blanca, saco de vestir en color crema y pantalón café. <br> Perfecto para destacar con estilo en cualquier ocasión.</p>
-                <a class="button" onclick="mostrarDetalles(event, 'detalle2')">Ver Detalles</a>
-                    <div id="detalle2" class="details-message">
-                        <p><strong>Precio:</strong> $59.99</p>
-                        <p><strong>Talles:</strong> S, M, L, XL</p>
-                    </div>
-            </div>
-        </div> -->
-        
-
-         
+    </div>   
     </main>
     
     <script src="/js/scripts.js"></script>

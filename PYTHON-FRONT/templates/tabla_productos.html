@@ -53,10 +53,10 @@
                   <div class="actions">
                     <a :href="'editar_producto.html?id=' + producto.id + '&descripcion=' + producto.descripcion + '&precio=' + producto.precio + '&cantidad=' + producto.cantidad + '&imagen=' + producto.imagen"
                     class="edit">
-                   <i class="fas fa-edit"></i>
+                   <i class="fas fa-edit"></i>EDITAR
                  </a>
                     <button class="delete" v-on:click="eliminar(producto.id)">
-                      <i class="fas fa-trash-alt"></i>
+                      <i class="fas fa-trash-alt"></i>BORRAR
                     </button>
                   </div>
                 </td>
@@ -68,7 +68,7 @@
     </main>
 
     <footer>
-            <p>&copy; 2024 Rocco Couture. Todos los derechos reservados.</p>
+            <p>&copy; 2024 Tienda de Vestir. Todos los derechos reservados.</p>
     </footer>
 
     <script src="/js/scripts.js"></script>
